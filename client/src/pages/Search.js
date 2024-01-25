@@ -16,7 +16,7 @@ function Search() {
     // loading state to load query
     setLoading(true);
     setSearchPerformed(true);
-
+    console.log(query);
     fetch(`${HOST}/api/pipeline/search/${query}`, {
       method: "GET",
       headers: {
